@@ -1,0 +1,92 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen" >
+
+    <Button
+        android:id="@+id/pink"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/blue"
+        android:layout_alignBottom="@+id/blue"
+        android:layout_alignParentRight="true"
+        android:background="#FFC0CB" />
+
+    <Button
+        android:id="@+id/green"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/red"
+        android:layout_alignBottom="@+id/red"
+        android:layout_toRightOf="@+id/red"
+        android:background="#ff00ff00" />
+
+    <Button
+        android:background="#E0FFFF"
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Steps"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/yellow"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff00" />
+
+    <Button
+        android:id="@+id/red"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/yellow"
+        android:layout_alignBottom="@+id/yellow"
+        android:layout_toRightOf="@+id/yellow"
+        android:background="#ffff0000" />
+
+    <Button
+        android:id="@+id/navy"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_toLeftOf="@+id/blue"
+        android:background="#000080" />
+
+    <Button
+        android:id="@+id/blue"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/navy"
+        android:layout_alignBottom="@+id/navy"
+        android:layout_toLeftOf="@+id/pink"
+        android:background="#0000FF" />
+
+    <sofia.graphics.ShapeView
+        android:id="@+id/shapeView"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/step" />
+
+</RelativeLayout>
